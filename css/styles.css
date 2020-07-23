@@ -11,14 +11,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  overflow-x: hidden;
 }
 .custom-container{
   position: relative;
   background-image: url("../images/logo.png");
   background-size: cover;
-  height: 900px;
-  width: 1440px;
+  height: 120vh;
+  width: 100%;
 }
 nav {
   position: relative;
@@ -93,6 +92,8 @@ nav .icon-burger .line {
   left: 380px;
   top: 327px;
   color: #FFFFFF;
+width: 691px;
+height: 100px;
 }
 
 
@@ -310,8 +311,8 @@ nav .icon-burger .line {
     opacity: 0;
   }
   .custom-container{ 
-    width: 100%;
-    height: 604.38px;
+    width: auto;
+    height: 604px;
   }
   .text-over .title h1 {
     text-align: center;
@@ -326,9 +327,12 @@ nav .icon-burger .line {
   .text-over {
     text-align: center;
     position: absolute;
-    left: 25%;
+    margin: auto 0;
+    left:40px;
     top: 210px;
     color: #FFFFFF;
+    width: 315px;
+    height: 120px;
   }
   .about-me {
     padding: 20px;
