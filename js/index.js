@@ -14,3 +14,4 @@ document.onreadystatechange = () => {
         currentLink()
     }
 };
+
