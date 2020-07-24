@@ -326,10 +326,10 @@ height: 100px;
     line-height: 30px;
   }
   body{
-    width: 414px;
+    width: auto;
   }
   .custom-container{ 
-    width: 414px;
+    width: auto;
     height: 604px;
   }
   .text-over .title h1 {
