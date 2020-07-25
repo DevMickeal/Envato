@@ -11,18 +11,20 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
+  background: #000;
+  color: #FFFFFF
 }
 .custom-container{
   position: relative;
   background-image: url("../images/logo.png");
   background-size: cover;
-  height: 900px;
+  height: 780px;
   width: 100%;
 }
 nav {
   position: relative;
   height: 80px;
-  padding: 0 5%;
+
 }
 nav .logo {
   float: left;
@@ -30,12 +32,7 @@ nav .logo {
   height: 100%;
   display: flex;
   align-items: center;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 23px;
-  color: #fff;
+  padding-left: 30px;
 }
 nav .links {
   float: right;
@@ -86,28 +83,20 @@ nav .icon-burger .line {
   width: 120px;
 }
 
-.active {
+.current {
  border-bottom: 3px solid #F69225;
 }
 .text-over {
-  text-align: center;
   position: absolute;
-  left: 25%;
-  top: 327px;
+  top: 30%;
+  width: 100%;
+  text-align: center;
   color: #FFFFFF;
-width: 691px;
-height: 100px;
 }
-
-
 .text-over .title h1 {
   font-size: 96px;
   line-height: 100px;
 }
-/*.subtag {
-  width: 460px;
-  height: 72px;
-}*/
 
 .text-over .subtag h3 {
   font-weight: 500;
@@ -128,17 +117,22 @@ height: 100px;
 .about-me {
   padding: 40px 0;
   font-weight: bold;
-  color: #263238;
+  color: #FFFFFF;
 }
+.about-me img {
+  width: 500px;
+  height: 400px;
+}
+
 .about-me h2 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 72px;
 }
 .about-me p {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
 }
 .my-portfolio {
@@ -146,20 +140,21 @@ height: 100px;
   margin: 0 auto;
   padding: 50px;
 }
+
 .tag {
   padding: 20px;
   text-align: center;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 72px;
-  color: #263238;
+  color: #FFFFFF;
 }
 .nav .nav-item a {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  color: #263238;
+  color: #FFFFFF;
   margin: 10px;
 }
 
@@ -167,6 +162,7 @@ height: 100px;
 /****Modal Overlay***/
 .img-container {
   position: relative;
+  width: 300px;
 }
 .overlay {
   position: absolute;
@@ -175,11 +171,13 @@ height: 100px;
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 350px;
   opacity: 0;
   transition: .5s ease;
   border-radius: 10px;
   background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .img-container:hover .overlay {
@@ -188,10 +186,35 @@ height: 100px;
   background-color: #F69225;
 
 }
-.imag {
-    width: 100%;
-    height: auto;
-}
+
+/* MODAL styles */
+.modal-content{
+  width: 650px;
+  height: 650px;
+  background: #121212;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  }
+  .modal-content .close-modal{
+    outline: none;
+    text-align: right;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffff;
+    cursor: pointer;
+  }
+  .modal-content .modal-body {
+    color: #fff;
+  }
+  
+  .carousel-item {
+    padding : 7% 15%;
+  }
+
+
 .text {
   color: #fff;
   font-size: 20px;
@@ -215,7 +238,7 @@ height: 100px;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #263238;
+  color: #FFFFFF;
   opacity: 0.7;
 }
 .featured .feat {
@@ -236,14 +259,14 @@ height: 100px;
 .tag-contact {
   text-align: center;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 50px;
   line-height: 72px;
   letter-spacing: 0.03em;
   padding: 20px;
   color: #FFFFFF;
 }
 .contact-me p {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
 }
 .form-control {
@@ -275,7 +298,41 @@ height: 100px;
   color: #FFFFFF;
 }
 
+.tab {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #F69225;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
 
 @media (max-width: 768px) {
   nav .links {
@@ -319,11 +376,7 @@ height: 100px;
   }
 
   nav .logo {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
+    padding-left: 15px;
   }
   body{
     width: auto;
@@ -332,8 +385,11 @@ height: 100px;
     width: auto;
     height: 604px;
   }
+  .btn-ctct-me {
+    width: 125px;
+  }
   .text-over .title h1 {
-  text-align: center;
+  /* text-align: center; */
   font-size: 40px;
   line-height: 60px;
   }
@@ -343,14 +399,9 @@ height: 100px;
     line-height: 44px;
   }
   .text-over {
+    top: 40%;
+    width: 100%;
     text-align: center;
-    position: absolute;
-    margin: auto 0;
-    left: 49px;
-    top: 210px;
-    color: #FFFFFF;
-    width: 315px;
-    height: 120px;
   }
   .about-me {
     padding: 20px;
@@ -364,6 +415,7 @@ height: 100px;
   .about-me p {
     font-size: 18px;
     line-height: 40px;
+    text-align: center;
   }
   .tag {
     padding: 10px;
@@ -412,5 +464,37 @@ height: 100px;
 .footer .alo {
   margin: 0 auto;
   text-align: center;
+}
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+.img-container {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 394px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #F69225;
+  margin: 0 auto;
+  color: #fff;
 }
 }
